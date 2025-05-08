@@ -1,0 +1,92 @@
+---
+import peppa from '../assets/images/peppa.jpg';
+---
+
+<section id="young-illustres" class="py-20 md:py-32 relative section">
+  <div class="sticky top-20 z-10 bg-[#0d1117] py-6 border-b border-[#30363d] mb-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center">
+        <span class="text-[#58a6ff]">#</span> Mis jóvenes ilustres
+      </h2>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="prose prose-invert max-w-none mb-12">
+        <blockquote class="border-l-4 border-[#58a6ff] pl-4 italic text-lg md:text-xl text-[#c9d1d9]">
+          "Hoy soy docente, mentor y coordinador de carrera en la UNAH. Pero más que eso, soy un guía para quienes quieren transformar su realidad a través del conocimiento. A mis estudiantes los llamo 'jóvenes ilustres', porque eso es lo que son. Juntos, construimos futuro."
+        </blockquote>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-full overflow-hidden">
+              <img 
+                src={peppa.src} 
+                alt="Estudiante" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h4 class="text-white font-medium">Shirley Diaz</h4>
+              <p class="text-[#8b949e] text-sm">Egresada de Sistemas</p>
+            </div>
+          </div>
+          
+          <p class="text-[#c9d1d9] italic">
+            "El profesor Victor no solo nos enseña tecnología, nos enseña a creer en nosotros mismos. Su mentoría ha sido fundamental para mi desarrollo profesional."
+          </p>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-full overflow-hidden">
+              <img 
+                src="https://avatars.githubusercontent.com/u/123714290?v=4" 
+                alt="Estudiante" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h4 class="text-white font-medium">Ernesto Moncada</h4>
+              <p class="text-[#8b949e] text-sm">Egresado de Sistemas</p>
+            </div>
+          </div>
+          
+          <p class="text-[#c9d1d9] italic">
+            "Gracias al profesor Navas pude encontrar mi vocación en el desarrollo de software. Su guía fue clave para conseguir mi primer empleo en el sector."
+          </p>
+        </div>
+      </div>
+      
+      <div class="mt-12 bg-[#161b22] border border-[#30363d] rounded-lg p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-40 h-40 bg-[#58a6ff] rounded-full filter blur-[100px] opacity-20"></div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4">Impacto educativo</h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-[#58a6ff] mb-2">500+</div>
+            <p class="text-[#8b949e]">Estudiantes formados</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-4xl font-bold text-[#58a6ff] mb-2">10+</div>
+            <p class="text-[#8b949e]">Años de docencia</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-4xl font-bold text-[#58a6ff] mb-2">15+</div>
+            <p class="text-[#8b949e]">Proyectos estudiantiles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

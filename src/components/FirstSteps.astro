@@ -1,0 +1,84 @@
+---
+
+import unah from '../assets/images/unah-sellos.png';
+---
+
+<section id="first-steps" class="py-20 md:py-32 relative bg-[#0d1117] section">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center">
+        <span class="text-[#58a6ff]">#</span> Mis primeros pasos en la tecnología
+      </h2>
+      
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-[#30363d] transform md:translate-x-[-0.5px]"></div>
+        
+        <!-- Timeline item 1 -->
+        <div class="relative flex flex-col md:flex-row items-center md:justify-between mb-16">
+          <div class="w-full md:w-[45%] md:text-right md:pr-8 order-2 md:order-1">
+            <h3 class="text-xl font-semibold text-white mb-2">Victor Reparations</h3>
+            <p class="text-[#8b949e]">
+              Fundé una pequeña iniciativa de reparación y venta de computadoras para poder costear mis estudios.
+            </p>
+          </div>
+          
+          <div class="absolute left-0 md:left-1/2 w-8 h-8 bg-[#161b22] border-4 border-[#58a6ff] rounded-full transform md:translate-x-[-50%] z-10 flex items-center justify-center order-1 md:order-2 mb-4 md:mb-0">
+            <span class="text-[#58a6ff] text-xs font-bold">01</span>
+          </div>
+          
+          <div class="w-full md:w-[45%] md:pl-8 order-3">
+            <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors">
+              <div class="w-full h-auto rounded mb-3 flex items-center justify-center">
+                <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="35" fill="#58a6ff" />
+                  <path d="M50 20 V35 M50 65 V80 M20 50 H35 M65 50 H80" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="50" cy="50" r="10" fill="white" />
+                </svg>
+
+                <h1 class="text-white text-3xl font-bold">
+                  <span class="text-[#58a6ff]">Victor</span> Reparations
+                </h1>
+                
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline item 2 -->
+        <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+          <div class="w-full md:w-[45%] md:pr-8 order-2">
+            <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors">
+              <img 
+                src={unah.src} 
+                alt="UNAH" 
+                class="w-full h-auto rounded mb-3"
+              />
+            </div>
+          </div>
+          
+          <div class="absolute left-0 md:left-1/2 w-8 h-8 bg-[#161b22] border-4 border-[#58a6ff] rounded-full transform md:translate-x-[-50%] z-10 flex items-center justify-center order-1 mb-4 md:mb-0">
+            <span class="text-[#58a6ff] text-xs font-bold">02</span>
+          </div>
+          
+          <div class="w-full md:w-[45%] md:text-left md:pl-8 order-3">
+            <h3 class="text-xl font-semibold text-white mb-2">Becario en la UNAH</h3>
+            <p class="text-[#8b949e]">
+              Tuve la fortuna de ser becario en el Departamento de TI de la Universidad Nacional Autónoma de Honduras. Cada cable conectado, cada sistema reparado, era un paso hacia mi sueño.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center">
+        <blockquote class="border-l-4 border-[#58a6ff] pl-4 italic text-lg md:text-xl text-[#c9d1d9] max-w-2xl mx-auto">
+          "No fue fácil. Pero cada obstáculo superado me acercaba más a mi meta."
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  
+  <div class="absolute bottom-1/4 left-0 w-64 h-64 bg-[#bc8cff] rounded-full filter blur-[150px] opacity-10 parallax" data-speed="0.2"></div>
+</section>

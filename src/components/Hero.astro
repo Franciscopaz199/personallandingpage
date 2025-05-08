@@ -1,0 +1,62 @@
+---
+import ceo from "../assets/images/victor.jpg";
+import logo from "../assets/images/logo_nexo.png";
+---
+
+<section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 group">
+  <!-- Fondo -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0d1117]/80 via-[#0d1117]/50 to-[#0d1117] z-10"></div>
+    <div class="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-20 parallax transition-transform duration-300 ease-out" id="parallax-bg"></div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto px-4 z-10">
+    <div class="flex flex-col lg:flex-row items-center lg:items-center justify-center gap-12 text-center lg:text-left">
+      
+      <!-- Imagen con degradado -->
+      <div class="w-64 h-auto bg-gradient-to-br from-[#58a6ff]/30 to-[#1f6feb]/20 p-1 rounded-xl shadow-xl">
+        <img 
+          src={ceo.src} 
+          alt="Victor Navas" 
+          class="w-full h-auto object-cover rounded-xl"
+        />
+      </div>
+      
+      <!-- Texto alineado verticalmente -->
+      <div class="max-w-2xl flex flex-col justify-center items-center lg:items-start">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white text-reveal">
+          Soy Victor Navas
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-[#8b949e] mb-10 fade-in opacity-0" style="animation-delay: 0.5s;">
+          <span class="text-[#58a6ff] font-semibold">Y esta página está dedicada a todos mis jóvenes ilustres.</span>
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in opacity-0" style="animation-delay: 1s;">
+          <a 
+            href="#roots" 
+            class="px-6 py-3 bg-[#238636] text-white rounded-md hover:bg-[#2ea043] transition-colors font-medium"
+          >
+            Conoce mi historia
+          </a>
+          <a 
+            href="#skills" 
+            class="px-6 py-3 bg-[#30363d] text-white rounded-md hover:bg-[#3f4954] transition-colors font-medium"
+          >
+            Mis habilidades
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flecha de scroll -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#58a6ff]">
+        <path d="M12 5v14"></path>
+        <path d="m19 12-7 7-7-7"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+

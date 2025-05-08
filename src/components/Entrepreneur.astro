@@ -1,0 +1,91 @@
+---
+import ocra from '../assets/images/cultivo_ocra.webp';
+import cabros from '../assets/images/cabras.webp';
+import terrenos from '../assets/images/terrenos.webp';
+---
+
+<section id="entrepreneur" class="py-20 md:py-32 relative bg-[#0d1117] section">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white text-center">
+        <span class="text-[#58a6ff]">#</span> Emprendedor en otras áreas
+      </h2>
+      
+      <div class="prose prose-invert max-w-none mb-12">
+        <blockquote class="border-l-4 border-[#58a6ff] pl-4 italic text-lg md:text-xl text-[#c9d1d9]">
+          "También he incursionado en otros sectores: cultivo y venta de ocra, crianza de cabros y comercialización de terrenos. La innovación no solo vive en la tecnología, también en el campo y la visión de negocio."
+        </blockquote>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="group">
+          <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden hover:border-[#58a6ff] transition-all h-full">
+            <div class="h-48 overflow-hidden">
+              <img 
+                src={ocra.src}
+                alt="Cultivo de ocra" 
+                class="w-full h-full object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Cultivo de Ocra</h3>
+              <p class="text-[#8b949e]">
+                Implementación de técnicas agrícolas modernas para el cultivo y comercialización de ocra.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="group">
+          <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden hover:border-[#58a6ff] transition-all h-full">
+            <div class="h-48 overflow-hidden">
+              <img 
+                src={cabros.src}
+                alt="Crianza de cabros" 
+                class="w-full h-full object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Crianza de Cabros</h3>
+              <p class="text-[#8b949e]">
+                Desarrollo de un modelo sostenible para la crianza y comercialización de cabros en Honduras.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="group">
+          <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden hover:border-[#58a6ff] transition-all h-full">
+            <div class="h-48 overflow-hidden">
+              <img 
+                src={terrenos.src} 
+                alt="Comercialización de terrenos" 
+                class="w-full h-full object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Comercialización de Terrenos</h3>
+              <p class="text-[#8b949e]">
+                Identificación y desarrollo de oportunidades inmobiliarias en zonas estratégicas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <p class="text-[#8b949e] max-w-2xl mx-auto">
+          La diversificación ha sido clave en mi desarrollo profesional. Creo firmemente que la innovación y el emprendimiento pueden manifestarse en cualquier sector.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="absolute bottom-1/4 left-0 w-64 h-64 bg-[#58a6ff] rounded-full filter blur-[150px] opacity-10 parallax" data-speed="0.3"></div>
+</section>

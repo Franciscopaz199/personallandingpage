@@ -1,0 +1,103 @@
+---
+import nexo from "../assets/images/logo_nexo.png";
+---
+
+<section id="nexo" class="py-20 md:py-32 relative section">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0d1117]/80 via-[#0d1117]/50 to-[#0d1117] z-10"></div>
+    <div class="absolute inset-0 bg-[url('/code-bg.jpg')] bg-cover bg-center opacity-10 parallax" data-speed="0.15"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="w-full md:w-1/2 order-2 md:order-1">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <span class="text-[#58a6ff]">#</span> La joya de los jóvenes ilustres
+          </h2>
+          
+          <div class="prose prose-invert max-w-none">
+            <blockquote class="border-l-4 border-[#58a6ff] pl-4 italic text-lg md:text-xl text-[#c9d1d9]">
+              "Hoy acompaño con orgullo el nacimiento de Nexo Solutions, una startup tecnológica creada por dos de mis estudiantes: Francisco Paz y Daniel Henríquez. Como CEO y mentor, creo firmemente que este es solo el comienzo de algo grande."
+            </blockquote>
+          </div>
+          
+          <div class="mt-8">
+            <a 
+              href="#" 
+              class="inline-flex items-center gap-2 px-6 py-3 bg-[#238636] text-white rounded-md hover:bg-[#2ea043] transition-colors font-medium"
+            >
+              Conoce Nexo Solutions
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-1/2 order-1 md:order-2">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-[#58a6ff] to-[#bc8cff] rounded-lg blur opacity-25"></div>
+            <div class="relative bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+              <img 
+                src={nexo.src}  
+                alt="Nexo Solutions Team" 
+                class="w-full h-auto object-cover"
+              />
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <h3 class="text-white font-bold text-xl mb-2">Nexo Solutions</h3>
+                  <p class="text-[#8b949e]">Innovación tecnológica creada por jóvenes ilustres</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Team member 1 -->
+        <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6 flex items-start gap-4">
+          <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+            <img 
+              src="https://avatars.githubusercontent.com/u/95550123?v=4"
+              alt="Francisco Paz" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          
+          <div>
+            <h4 class="text-white font-medium text-lg">Francisco Paz</h4>
+            <p class="text-[#58a6ff] text-sm mb-2">Co-fundador de Nexo Solutions</p>
+            <p class="text-[#8b949e]">
+              "El profesor Victor nos inspiró a crear nuestra propia empresa. Su mentoría ha sido invaluable para convertir nuestra idea en realidad."
+            </p>
+          </div>
+        </div>
+        
+        <!-- Team member 2 -->
+        <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6 flex items-start gap-4">
+          <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+            <img 
+              src="https://avatars.githubusercontent.com/u/181374385?v=4"
+              alt="Daniel Henríquez" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          
+          <div>
+            <h4 class="text-white font-medium text-lg">Daniel Henríquez</h4>
+            <p class="text-[#58a6ff] text-sm mb-2">Co-fundador de Nexo Solutions</p>
+            <p class="text-[#8b949e]">
+              "Gracias a la guía del profesor Navas, hemos podido desarrollar soluciones tecnológicas innovadoras que están impactando positivamente a nuestros clientes."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

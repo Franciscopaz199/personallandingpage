@@ -1,11 +1,74 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Roots from '../components/Roots.astro';
+import FirstSteps from '../components/FirstSteps.astro';
+import ProfessionalEvolution from '../components/ProfessionalEvolution.astro';
+import TeachingCall from '../components/TeachingCall.astro';
+import YoungIllustres from '../components/YoungIllustres.astro';
+import Entrepreneur from '../components/Entrepreneur.astro';
+import NexoSolutions from '../components/NexoSolutions.astro';
+import Skills from '../components/Skills.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Victor Navas | Una página dedicada a todos mis jóvenes ilustres">
+  <main class="relative overflow-hidden">
+    <Navbar />
+    
+    <div class="narrative-container">
+      <Hero />
+      <Roots />
+      <FirstSteps />
+      <ProfessionalEvolution />
+      <TeachingCall />
+      <YoungIllustres />
+      <Entrepreneur />
+      <NexoSolutions />
+      <Skills />
+    </div>
+    
+    <Footer />
+  </main>
 </Layout>
+
+<style>
+  .narrative-container {
+    perspective: 1000px;
+  }
+</style>
+
+<script>
+  // Intersection Observer for scroll animations
+  const sections = document.querySelectorAll('.section');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        // Optional: remove the class when not in view
+        // entry.target.classList.remove('visible');
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -10% 0px'
+  });
+  
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  // Parallax effect
+  window.addEventListener('scroll', () => {
+    const parallaxElements = document.querySelectorAll('.parallax');
+    
+    parallaxElements.forEach(element => {
+      const speed = element.getAttribute('data-speed') || 0.5;
+      const yPos = -(window.scrollY * speed);
+      element.style.transform = `translateY(${yPos}px)`;
+    });
+  });
+</script>

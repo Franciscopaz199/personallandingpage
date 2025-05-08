@@ -1,0 +1,73 @@
+---
+import apreton from '../assets/images/apreton.webp';
+---
+
+<section id="teaching" class="py-20 md:py-32 relative bg-[#0d1117] section">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <span class="text-[#58a6ff]">#</span> El llamado a formar
+          </h2>
+          
+          <div class="prose prose-invert max-w-none">
+            <blockquote class="border-l-4 border-[#58a6ff] pl-4 italic text-lg md:text-xl text-[#c9d1d9]">
+              "Un colega creyó en mí más de lo que yo mismo creía. Me recomendó para ser docente y decidí completar mi maestría en Administración en la Universidad Católica. Ese paso cambió mi vida. Ingresé como docente por hora en la UNAH, y más adelante, firmé contrato permanente. Dejé atrás los servidores y redes... para empezar a formar mentes."
+            </blockquote>
+          </div>
+          
+          <div class="mt-8">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-10 h-10 rounded-full bg-[#161b22] border border-[#30363d] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#58a6ff]">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-white font-medium">Maestría en Administración</h4>
+                <p class="text-[#8b949e] text-sm">Universidad Católica de Honduras</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 rounded-full bg-[#161b22] border border-[#30363d] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#58a6ff]">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-white font-medium">Docente Permanente</h4>
+                <p class="text-[#8b949e] text-sm">Universidad Nacional Autónoma de Honduras</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-1/2">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-[#58a6ff] to-[#bc8cff] rounded-lg blur opacity-25"></div>
+            <div class="relative bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+              <img 
+                src={apreton.src}
+                alt="Victor como docente" 
+                class="w-full h-auto object-cover"
+              />
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <h3 class="text-white font-bold text-xl mb-2">Formando el futuro</h3>
+                  <p class="text-[#8b949e]">Dejé atrás los servidores y redes... para empezar a formar mentes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="absolute top-1/3 right-0 w-64 h-64 bg-[#bc8cff] rounded-full filter blur-[150px] opacity-10 parallax" data-speed="0.25"></div>
+</section>

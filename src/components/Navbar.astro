@@ -1,0 +1,58 @@
+---
+---
+
+<nav class="fixed top-0 w-full z-50 bg-[#161b22] border-b border-[#30363d] backdrop-blur-sm bg-opacity-80">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="#" class="text-xl font-bold text-white flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#58a6ff]">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+        <path d="M2 17l10 5 10-5"></path>
+        <path d="M2 12l10 5 10-5"></path>
+      </svg>
+      Victor Navas
+    </a>
+    
+    <div class="hidden md:flex space-x-6">
+      <a href="#roots" class="text-[#8b949e] hover:text-white transition-colors">Mis Raíces</a>
+      <a href="#evolution" class="text-[#8b949e] hover:text-white transition-colors">Evolución</a>
+      <a href="#teaching" class="text-[#8b949e] hover:text-white transition-colors">Docencia</a>
+      <a href="#skills" class="text-[#8b949e] hover:text-white transition-colors">Habilidades</a>
+    </div>
+    
+    <button id="menu-toggle" class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#161b22] border-b border-[#30363d] px-4 py-2">
+    <div class="flex flex-col space-y-3">
+      <a href="#roots" class="text-[#8b949e] hover:text-white py-2 transition-colors">Mis Raíces</a>
+      <a href="#evolution" class="text-[#8b949e] hover:text-white py-2 transition-colors">Evolución</a>
+      <a href="#teaching" class="text-[#8b949e] hover:text-white py-2 transition-colors">Docencia</a>
+      <a href="#skills" class="text-[#8b949e] hover:text-white py-2 transition-colors">Habilidades</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+  
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileMenu?.querySelectorAll('a');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+</script>
